@@ -1,0 +1,215 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "/assets/css/animate.min.css";
+/* You can add global styles to this file, and also import other style files */
+
+/* шрифти */
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("/assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src:
+    url("/assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-BoldItalic";
+  src:
+    url("/assets/fonts/Roboto/Roboto-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Italic";
+  src:
+    url("/assets/fonts/Roboto/Roboto-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src:
+    url("/assets/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+
+/*базові стилі*/
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Roboto";
+  background-color: #fbfbfb;
+  margin: 0;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a:hover, a:active, a:focus {
+  color: initial;
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/*------------------*/
+
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.button-success, .button-primary, .button-cancel {
+  height: 37px;
+  border-radius: 4px;
+  padding: 0 22px;
+  font: 14px "Roboto-Medium";
+  line-height: 37px;
+  text-align: center;
+  outline: none !important;
+  border: none !important;
+  display: inline-block;
+}
+.mat-button-wrapper{
+  color: #ffffff;
+}
+.button-success {
+  background-color: #53c07e;
+  color: #ffffff;
+}
+
+.button-success:hover {
+  color: #ffffff;
+  background-color: #35915a;
+}
+
+.button-primary {
+  background-color: #42a5f5;
+  color: #ffffff;
+}
+
+.button-primary:hover {
+  color: #ffffff;
+  background-color: #0c80df;
+}
+
+.button-cancel {
+  background-color: #e0e0e0;
+  color: #333333;
+}
+
+.button-cancel:hover {
+  color: #333333;
+  background-color: #bababa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.authorization-layout {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('/assets/img/dark-material-bg.jpg') top left/100% 100% no-repeat;
+}
+
+#registration-modal-form, #login-modal-form {
+  opacity: 0;
+  animation: fadeInUp 1s 0.3s forwards;
+}
+
+.ui-common-form {
+  width: 400px;
+  position: relative;
+  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, .2), 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12);
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.ui-common-form-header {
+  height: 130px;
+  width: 100%;
+  color: #ffffff;
+  position: relative;
+  padding: 0 16px 24px;
+  display: block;
+  background-color: #4c576c;
+}
+
+.ui-common-form-header .form-header-title {
+  font: 20px/65px 'Roboto-Bold';
+}
+
+.ui-common-authorization-header {
+  background-color: #fff;
+  padding: 24px;
+  font: 20px "Roboto-Medium";
+  color: rgba(0, 0, 0, 0.87);
+  text-align: center;
+
+}
+
+.ui-common-authorization-header .form-header-title {
+  font: 20px / 30px @Roboto;
+  margin-top: 55px;
+  text-transform: uppercase;
+}
+
+.ui-common-company-logo img {
+  height: 100px;
+}
+
+.form-button-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.form-button-block > * {
+  margin: 0 15px;
+}
+
+.ui-common-form-body {
+  background-color: #fff;
+  padding: 24px;
+}
